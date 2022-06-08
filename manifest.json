@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2, 
+    "name": "First  extension",
+    "version": "0.1.0",
+    "description": "Saving timestamps in YT videos",
+    "permissions": ["storage", "tabs"],
+    "background": {
+        "scripts":[
+            "background.js"
+        ]
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://*.google.com/*"],
+        "js": ["test.js"]
+      }
+    ]
+}
